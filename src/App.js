@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Header from './components/Header';
+import LateralMenu from './components/LateralMenu/LateralMenu';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    function App() {
+        const [lateralIsOpen, setLateralIsOpen] = useState(true);
+
+        return (
+        <div className="App bg-gray-100 h-screen">
+            <Header toggleLateral={() => setLateralIsOpen((prev) => !prev)} isOpen={ lateralIsOpen } />
+            <div className='h-[calc(100%-60px)] w-full flex'>
+                <LateralMenu isOpen={ lateralIsOpen } />
+            </div>
+        </div>
+      );
+    }
 
 export default App;
