@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../pfraddons/.idea/pfraddons.iml" filepath="$PROJECT_DIR$/../pfraddons/.idea/pfraddons.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/webdevtools.iml" filepath="$PROJECT_DIR$/.idea/webdevtools.iml" />
     </modules>
   </component>
