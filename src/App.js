@@ -7,6 +7,7 @@ import Header from './components/Header';
 import LateralMenu from './components/LateralMenu/LateralMenu';
 import Dashboard from './pages/Dashboard';
 import Glassmorphism from "./pages/Design/Glassmorphism";
+import Neumorphism from "./pages/Design/Neumorphism";
 
 function App() {
     const [lateralIsOpen, setLateralIsOpen] = useState(true);
@@ -22,6 +23,7 @@ function App() {
                             <Route path='/' element={<Dashboard />} />
                             <Route path='/dashboard' element={<Dashboard />} />
                             <Route path='/glassmorphism' element={ <Glassmorphism /> } />
+                            <Route path='/neumorphism' element={ <Neumorphism /> } />
                         </Routes>
                     </section>
                 </div>
