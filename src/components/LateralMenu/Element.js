@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function Element({ isOpen, type, icon, link }) {
+function Element({ type, icon, link }) {
     return (
         <NavLink
             to={ link }
@@ -9,7 +9,7 @@ function Element({ isOpen, type, icon, link }) {
             }
         >
             <div className='text-[26px] text-center customTransition'>{ icon }</div>
-            <p className='customTransition ml-1 text-ellipsis overflow-hidden whitespace-nowrap' style={{ opacity: isOpen ? '1' : '1' }}>{ type }</p>
+            <p className='customTransition ml-1 text-ellipsis overflow-hidden whitespace-nowrap'>{ type }</p>
         </NavLink>
     )
 }

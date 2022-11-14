@@ -5,16 +5,18 @@ import '../../components/Design/Glassmorphism/Glassmorphism.css';
 
 function Glassmorphism() {
     const [resultSettings, setResultSettings] = useState({
-        backgroundColor: '#e4e4e7',
-        textColor: '#475569',
-        panelColor: '#1f6bff',
-        transparency: 0.5,
-        blur: 10,
+        backgroundColor: '#1f6bff',
+        textColor: '#ffffff',
+        panelColor: '#ffffff',
+        transparency: 30,
+        blur: 2.55,
         shadowOpacity: 0.25,
         shadowWidth: 5
     })
 
     function changeSettings(type, value) {
+        if (type === "transparency") console.log(parseInt(value).toString(16));
+
         setResultSettings({
             ...resultSettings,
             [type]: value

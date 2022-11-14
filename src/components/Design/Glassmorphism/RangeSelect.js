@@ -1,7 +1,7 @@
 function RangeSelect({ type, title, changeSettings, defaultValue, min, max, step, backgroundColor, textColor }) {
     return (
         <div className='flex flex-col items-center'>
-            <label>{ title }</label>
+            <label className='select-none'>{ title }</label>
             <input
                 type={ 'range' }
                 min={ min }
