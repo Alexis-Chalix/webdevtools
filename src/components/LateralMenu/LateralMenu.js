@@ -4,6 +4,7 @@ import Element from './Element'
 // Icons
 import { MdOutlineSpaceDashboard } from 'react-icons/md'
 import { TbGlass } from 'react-icons/tb'
+import { GiHole } from 'react-icons/gi'
 
 function LateralMenu({ isOpen }) {
     return (
@@ -13,12 +14,12 @@ function LateralMenu({ isOpen }) {
         >
             <div className='flex flex-col mb-3' >
                 <SectionTitle isOpen={ isOpen } title={ "Général" } />
-                <Element isOpen={ isOpen } type={ "Tableau de bord" } icon={ <MdOutlineSpaceDashboard /> } link='dashboard' />
-                <Element isOpen={ isOpen } type={ "Tableau de booooooord" } icon={ <MdOutlineSpaceDashboard /> } link='dashboard-2' />
+                <Element isOpen={ isOpen } type={ "Dashboard" } icon={ <MdOutlineSpaceDashboard /> } link='dashboard' />
             </div>
             <div className='flex flex-col' >
                 <SectionTitle isOpen={ isOpen } title={ "Design" } />
                 <Element isOpen={ isOpen } type={ "Glassmorphism" } icon={ <TbGlass /> } link='glassmorphism' />
+                <Element isOpen={ isOpen } type={ "Neumorphism" } icon={ <GiHole /> } link='neumorphism' />
             </div>
         </section>
     );

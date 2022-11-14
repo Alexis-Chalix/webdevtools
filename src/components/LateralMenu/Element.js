@@ -8,7 +8,7 @@ function Element({ isOpen, type, icon, link }) {
                 'px-2 py-1 flex cursor-pointer items-center rounded customTransition !duration-200 hover:bg-zinc-200 ' + (isActive ? "text-blue-600 bg-blue-100 hover:bg-blue-200" : "text-slate-600")
             }
         >
-            <div className='text-3xl text-center customTransition'>{ icon }</div>
+            <div className='text-[26px] text-center customTransition'>{ icon }</div>
             <p className='customTransition ml-1 text-ellipsis overflow-hidden whitespace-nowrap' style={{ opacity: isOpen ? '1' : '1' }}>{ type }</p>
         </NavLink>
     )
