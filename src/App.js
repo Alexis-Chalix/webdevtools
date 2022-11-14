@@ -2,9 +2,11 @@ import './App.css';
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+// Import Pages and Components
 import Header from './components/Header';
 import LateralMenu from './components/LateralMenu/LateralMenu';
 import Dashboard from './pages/Dashboard';
+import Glassmorphism from "./pages/Design/Glassmorphism";
 
 function App() {
     const [lateralIsOpen, setLateralIsOpen] = useState(true);
@@ -19,6 +21,7 @@ function App() {
                         <Routes>
                             <Route path='/' element={<Dashboard />} />
                             <Route path='/dashboard' element={<Dashboard />} />
+                            <Route path='/glassmorphism' element={ <Glassmorphism /> } />
                         </Routes>
                     </section>
                 </div>

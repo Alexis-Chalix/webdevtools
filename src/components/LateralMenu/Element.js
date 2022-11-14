@@ -5,7 +5,7 @@ function Element({ isOpen, type, icon, link }) {
         <NavLink
             to={ link }
             className={({ isActive }) =>
-                'px-2 py-1 flex cursor-pointer items-center rounded customTransition !duration-200 hover:bg-zinc-200 ' + (isActive ? "text-blue-600" : "text-slate-600")
+                'px-2 py-1 flex cursor-pointer items-center rounded customTransition !duration-200 hover:bg-zinc-200 ' + (isActive ? "text-blue-600 bg-blue-100 hover:bg-blue-200" : "text-slate-600")
             }
         >
             <div className='text-3xl text-center customTransition'>{ icon }</div>
