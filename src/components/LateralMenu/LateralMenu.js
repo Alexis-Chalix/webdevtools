@@ -14,12 +14,12 @@ function LateralMenu({ isOpen }) {
         >
             <div className='flex flex-col mb-3' >
                 <SectionTitle isOpen={ isOpen } title={ "Général" } />
-                <Element isOpen={ isOpen } type={ "Dashboard" } icon={ <MdOutlineSpaceDashboard /> } link='dashboard' />
+                <Element type={ "Dashboard" } icon={ <MdOutlineSpaceDashboard /> } link='dashboard' />
             </div>
             <div className='flex flex-col' >
                 <SectionTitle isOpen={ isOpen } title={ "Design" } />
-                <Element isOpen={ isOpen } type={ "Glassmorphism" } icon={ <TbGlass /> } link='glassmorphism' />
-                <Element isOpen={ isOpen } type={ "Neumorphism" } icon={ <GiHole /> } link='neumorphism' />
+                <Element type={ "Glassmorphism" } icon={ <TbGlass /> } link='glassmorphism' />
+                <Element type={ "Neumorphism" } icon={ <GiHole /> } link='neumorphism' />
             </div>
         </section>
     );

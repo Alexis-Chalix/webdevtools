@@ -4,7 +4,7 @@ import ColorPicker from "./ColorPicker";
 function Settings({ settings, changeSettings }) {
     return (
         <div
-            className='h-2/3 w-1/4 rounded-lg flex flex-col items-center justify-between px-12 py-20 customTransition'
+            className='h-2/3 w-1/4 rounded-lg flex flex-col items-center justify-between px-12 py-20 customTransition bg-center shadow-lg'
             style={{
                 backgroundColor: settings.backgroundColor,
                 color: settings.textColor,
