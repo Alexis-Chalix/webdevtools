@@ -7,7 +7,7 @@ function Result({ settings }) {
 
     return(
         <div
-            className='h-2/3 w-1/2 rounded-lg flex flex-col items-center justify-center customTransition relative bg-center'
+            className='h-2/3 w-1/2 rounded-lg flex flex-col items-center justify-center customTransition relative bg-center shadow-lg'
             id={ 'result' }
             style={{
                 backgroundColor: settings.backgroundColor,

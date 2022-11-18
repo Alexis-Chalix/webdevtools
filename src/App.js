@@ -8,6 +8,7 @@ import LateralMenu from './components/LateralMenu/LateralMenu';
 import Dashboard from './pages/Dashboard';
 import Glassmorphism from "./pages/Design/Glassmorphism";
 import Neumorphism from "./pages/Design/Neumorphism";
+import PasswordGenerator from './pages/Tools/PasswordGenerator';
 
 function App() {
     const [lateralIsOpen, setLateralIsOpen] = useState(true);
@@ -24,6 +25,7 @@ function App() {
                             <Route path='/dashboard' element={<Dashboard />} />
                             <Route path='/glassmorphism' element={ <Glassmorphism /> } />
                             <Route path='/neumorphism' element={ <Neumorphism /> } />
+                            <Route path='/password-generator' element={ <PasswordGenerator /> } />
                         </Routes>
                     </section>
                 </div>
