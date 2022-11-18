@@ -1,6 +1,18 @@
 import { FiCopy } from 'react-icons/fi'
+import $ from 'jquery'
 
 function getCode({ settings }) {
+    function copyCode() {
+        const code = $('#getCode').text();
+        navigator.clipboard.writeText(code).then(() => {
+            const copyBtn = $('#copyBtn');
+            copyBtn.toggleClass('copied');
+            setTimeout(() => {
+                copyBtn.toggleClass('copied');
+            }, 800);
+        });
+    }
+
     return (
         <div className="w-4/5 bg-stone-900 p-4 rounded-lg flex flex-col gap-3 relative">
             <div className='flex gap-2'>
@@ -9,7 +21,7 @@ function getCode({ settings }) {
                 <div className="rounded-full w-4 h-4 bg-green-500"></div>
             </div>
             <div>
-                <p className='text-sm tracking-wide' id="getCode">
+                <p className='text-sm font-code' id="getCode">
                     <span className='text-orange-300'>#card</span><span> &#123;</span><br/>
                         <span className='text-blue-300 ml-6'>width</span>: <span className='text-amber-400'>400px</span>;<br/>
                         <span className='text-blue-300 ml-6'>height</span>: <span className='text-amber-400'>200px</span>;<br/>
@@ -23,7 +35,8 @@ function getCode({ settings }) {
             </div>
             <div
                 className='absolute top-1 right-1 p-2 flex justify-center items-center text-2xl rounded-lg hover:bg-stone-700 customTransition cursor-pointer'
-                onClick={() => navigator.clipboard.writeText(document.querySelector('#getCode').innerText)}
+                id="copyBtn"
+                onClick={ copyCode }
             >
                 <FiCopy />
             </div>

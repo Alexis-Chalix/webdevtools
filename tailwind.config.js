@@ -11,6 +11,9 @@ module.exports = {
       boxShadow: {
         formInput: "0 0 0 2px #1f6bff",
         header: "0 6px 6px rgba(31, 107, 255, 0.1);"
+      },
+      fontFamily: {
+        code: ["JetBrains Mono", "monospace"],
       }
     },
   },

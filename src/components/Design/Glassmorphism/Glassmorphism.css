@@ -14,3 +14,22 @@ input[type=range]::-webkit-slider-runnable-track  {
     border: none;
     background: transparent;
 }
+
+#copyBtn:after {
+    content: "Copied";
+    line-height: 1.6;
+    position: absolute;
+    top: -12px;
+    left: 25px;
+    background: #39a10e;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+}
+
+#copyBtn.copied:after {
+    opacity: 1;
+}
