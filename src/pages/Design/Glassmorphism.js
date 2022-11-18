@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import Result from '../../components/Design/Glassmorphism/Result';
 import Settings from '../../components/Design/Glassmorphism/Settings'
 import '../../components/Design/Glassmorphism/Glassmorphism.css';
@@ -22,6 +22,10 @@ function Glassmorphism() {
             [type]: value
         })
     }
+
+    useEffect(() => {
+        document.title = "WebDevTools - Glassmorphism";
+    });
 
     return (
         <div className='flex items-center h-full justify-around'>
